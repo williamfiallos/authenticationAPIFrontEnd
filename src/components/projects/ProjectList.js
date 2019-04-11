@@ -37,7 +37,7 @@ class ProjectList extends Component {
                     return <li key={index}>{task.title}</li>;
                   })}
                 </ul>
-                {/* <p style={{maxWidth: '400px'}} >{project.description} </p> */}
+                <p style={{ maxWidth: '400px' }}>{project.description} </p>
               </div>
             );
           })}

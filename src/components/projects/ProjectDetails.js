@@ -67,13 +67,9 @@ class ProjectDetails extends Component {
   };
 
   ownershipCheck = project => {
-    console.log('loggedInUser', this.props.loggedInUser);
-    console.log('owner', project.owner);
-    //console.log('_id', this.props.loggedInUser._id);
-
     if (
       this.props.loggedInUser &&
-      project.owner == this.props.loggedInUser._id
+      project.owner === this.props.loggedInUser._id
     ) {
       return (
         <div>
@@ -87,6 +83,7 @@ class ProjectDetails extends Component {
   };
 
   render() {
+    console.log(this.state);
     return (
       <div>
         <h1>{this.state.title}</h1>
