@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import AuthService from '../auth/auth-service';
 
+// <Navbar /> is actually just functional (stateless) component for now. Let’s turn it to class (stateful) component.
+
 class Navbar extends Component {
   constructor(props) {
     super(props);
